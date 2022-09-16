@@ -1,8 +1,14 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-def majuscule(mot):
+from dataclasses import replace
+
+
+def majuscule(mots):
     # TODO completer la fonction ici
-    return mot
+    maj=""
+    for lettres in mots:
+        maj+=chr(ord(lettres)-32)
+    return
 
 
 if __name__ == '__main__':
